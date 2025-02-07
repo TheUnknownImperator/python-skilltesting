@@ -29,4 +29,5 @@ for row in tables[table_index].tbody.find_all('tr'):
         finals_data = pd.concat([finals_data, tempdf], ignore_index = True)
 
 finals_data.index = finals_data.index+1     # Fixing index to be one- instead of zero-based
+print("List of FA Cup Winners:\n")
 print(finals_data)
